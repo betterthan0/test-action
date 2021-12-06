@@ -18,4 +18,6 @@ jobs:
       - run: ls /home/runner
       - run: ls /home/runner/work
       - run: ls /home/runner/work/_actions/actions/checkout/v2
+      - run: cd /home/runner/work/_actions/actions/checkout/v2
+      - run: cat action.yml
       
