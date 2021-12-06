@@ -17,5 +17,5 @@ jobs:
       - run: echo " Repo - ${{ github.repository }} "
       - run: ls /home/runner
       - run: ls /home/runner/work
-      - run: ls /home/runner/work/_actions/actions
+      - run: ls /home/runner/work/_actions/actions/checkout
       
