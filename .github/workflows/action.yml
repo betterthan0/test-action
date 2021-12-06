@@ -1,0 +1,15 @@
+name: Actions Demo
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  Test-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "event name - ${{ github.event_name }}"
+      - run: echo "OS - ${{ runner.os }}"
+      - run: echo "Branch - ${{ github.ref }}"
+      - run: ls -la
+      
