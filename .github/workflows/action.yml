@@ -19,3 +19,4 @@ jobs:
       - run: cd /
       - run: ls -la
       - run: docker images
+      - run: ls /home
