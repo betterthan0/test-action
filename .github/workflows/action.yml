@@ -15,8 +15,5 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo " Repo - ${{ github.repository }} "
-      - run: ls -la
-      - run: cd /
-      - run: ls -la
-      - run: docker images
       - run: ls /home/runner
+      - run: ls /home/runner/work
