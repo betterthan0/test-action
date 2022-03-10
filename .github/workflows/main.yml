@@ -20,4 +20,4 @@ jobs:
 # Run Unit tests- Specify unit tests here 
 
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name test-action --resolve-s3
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name test-action --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-yyamaurffvm2
