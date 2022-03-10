@@ -1,6 +1,6 @@
 
 def lambda_handler(event,context):
-	print()
+	print_msg()
 
-def print():
+def print_msg():
 	print("hell")
