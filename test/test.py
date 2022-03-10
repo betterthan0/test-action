@@ -1,5 +1,6 @@
 
 def lambda_handler(event,context):
-	print("qqq")
+	print()
 
-lambda_handler()
+def print():
+	print("hell")
