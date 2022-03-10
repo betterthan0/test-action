@@ -20,5 +20,5 @@ jobs:
 # Run Unit tests- Specify unit tests here 
 
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket test-action-art --capabilities lambda-user CAPABILITY_AUTO_EXPAND
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket test-action-art --capabilities {{ secrets.USER }}
 
