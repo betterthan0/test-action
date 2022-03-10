@@ -18,10 +18,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-      - name: Install dependencies
-        run: |
-          ls -la
-          ls .aws-sam/build/HelloWorldFunction/
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -29,6 +25,10 @@ jobs:
           aws-region: us-east-1
       # sam build 
       - run: sam build 
+      - name: Install dependencies
+        run: |
+          ls -la
+          ls .aws-sam/build/HelloWorldFunction/
       #--use-container --debug --template-file ./template.yaml
 
 # Run Unit tests- Specify unit tests here 
