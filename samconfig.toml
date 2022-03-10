@@ -2,9 +2,9 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "test-action"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-yyamaurffvm2"
-s3_prefix = "test-action"
+stack_name = "scheduled-test-action"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-su1u1f9y8tjn"
+s3_prefix = "scheduled-test-action"
 region = "eu-central-1"
 capabilities = "CAPABILITY_IAM CAPABILITY_AUTO_EXPAND"
 image_repositories = []
