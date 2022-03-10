@@ -16,7 +16,7 @@ Resources:
     Properties:
       CodeUri: test/
       Handler: test.lambda_handler
-      Runtime: python3.9
+      Runtime: python3.8
       Architectures:
         - x86_64
       Events:
