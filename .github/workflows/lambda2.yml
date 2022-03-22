@@ -20,14 +20,14 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      - run: sam build --use-container --debug --template-file ./template.yaml 
+      - run: sam build --use-container --debug --template-file ./lambda2.yaml
      # - name: Install dependencies
      #   run: |
      #     ls -la
      #     ls .aws-sam/build/HelloWorldFunction/
-      
 
-# Run Unit tests- Specify unit tests here 
+
+# Run Unit tests- Specify unit tests here
 
 # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name test-action --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-yyamaurffvm2
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name test-action-lambda2 --s3-bucket aws-sam-cli-managed-default-samclisourcebucket-yyamaurffvm2
