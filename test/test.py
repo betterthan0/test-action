@@ -4,3 +4,6 @@ def lambda_handler(event,context):
 
 def print_msg():
 	print("ARTEM")
+
+def lambda2(event,context):
+	print("test2")

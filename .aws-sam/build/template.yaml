@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'test-action
+
+  Sample SAM Template for test-action
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Resources:
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: test.lambda_handler
+      Runtime: python3.8
+      Architectures:
+      - x86_64
+      Events:
+        ScheduledFunction:
+          Type: Schedule
+          Properties:
+            Schedule: cron(25 16 * * ? *)
+    Metadata:
+      SamResourceId: HelloWorldFunction

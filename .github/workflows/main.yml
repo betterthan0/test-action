@@ -20,12 +20,11 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      # sam build --use-container --debug --template-file ./template.yaml
-      - run: sam build 
-      - name: Install dependencies
-        run: |
-          ls -la
-          ls .aws-sam/build/HelloWorldFunction/
+      - run: sam build --use-container --debug --template-file ./template.yaml 
+     # - name: Install dependencies
+     #   run: |
+     #     ls -la
+     #     ls .aws-sam/build/HelloWorldFunction/
       
 
 # Run Unit tests- Specify unit tests here 
